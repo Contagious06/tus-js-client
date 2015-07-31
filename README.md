@@ -18,7 +18,7 @@ input.addEventListener("change", function(e) {
             var percentage = (bytesUploaded / bytesTotal * 100).toFixed(2)
             console.log(bytesUploaded, bytesTotal, percentage + "%")
         },
-        onSuccess: function() {
+        onSuccess: function(xhr) {
             console.log("Download %s from %s", upload.file.name, upload.url)
         }
     })
